@@ -31,12 +31,12 @@ header {
 }
 
 body {
-    background-color: #b49aac;
+    background-color: #E7E7E7;
 }
 
 h1, h2 {
-    font-family: Inter;
-    font-weight: 550;
+    font-family: Meddon;
+    font-weight: 400;
     line-height: 1.3em;
     color: rgb(231, 231, 231);
     text-align: center;
@@ -54,7 +54,7 @@ h2 {
 }
 
 main {
-    font-family: Inter;
+    font-family: Libre Baskerville;
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -66,11 +66,11 @@ main {
     flex-wrap: wrap;
     min-width: 250px;
     min-height: 300px;
-    border: 4px solid #671b50;
+    border: 2px solid;
     padding:20px;
     text-align: center;
     border-radius: 15px;
-    background-color: #d3c2cd;
+    background-color: #D9DCE1;
     font-size: large;
     margin: 50px;
     
@@ -128,11 +128,11 @@ a:link {
   }
 
 footer {
-    font-family: Inter;
+    font-family: Libre Baskerville;
     text-align: center;
     line-height: 2em;
     color:#1f1f1f;
-    background-color: #c4aabc;
+    background-color: #D9DCE1;
     padding: 20px;
     width: 1250px;
     margin: auto;

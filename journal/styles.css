@@ -1,0 +1,89 @@
+/* Font Family for Header is Handjet */
+
+/* Reset Styles START */
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul, nav ol, li {
+    list-style-type: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+/* Reset Styles END */
+
+header {
+    width: 1200px;
+    height: 250px;
+    align-content: center;
+    margin: auto;
+}
+
+body {
+    background-color: #213351;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(223, 225, 233);
+    padding-top: 40px;
+}
+
+h1, h2 {
+    font-family: Meddon;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom:10px;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+nav {
+    display:inline-flex;
+    justify-content: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+p {
+    line-height: 2em;
+    font-family: Libre Baskerville;
+}
+
+section {
+    margin: 20px;
+    padding: 40px;
+    background-color: #d9dce1e9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+main {
+    display: flex;
+    margin:auto;
+    padding: 80px;
+}
+
+aside {
+    font-family: Libre Baskerville;
+    padding: 10px;
+    margin: auto;
+    line-height: 2em;
+}

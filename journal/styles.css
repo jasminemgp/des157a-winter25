@@ -67,12 +67,13 @@ p {
 }
 
 section {
-    margin: 20px;
+    margin: auto;
     padding: 40px;
     background-color: #d9dce1e9;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
+    max-width: 800px;
 }
 
 main {

@@ -68,6 +68,9 @@ p {
 
 section {
     margin: auto;
+    flex-direction: column;
+
+div {
     padding: 40px;
     background-color: #d9dce1e9;
     border-bottom-left-radius: 20px;
@@ -75,9 +78,11 @@ section {
     border-top-left-radius: 20px;
     max-width: 800px;
 }
+}
 
 main {
     display: flex;
+    flex: 1;
     margin:auto;
     padding: 80px;
 }

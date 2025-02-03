@@ -22,65 +22,60 @@ img {
 
 /* Reset Styles END */
 
-header {
-    width: 1200px;
-    height: 250px;
-    align-content: center;
-    margin: auto;
+form {
+    min-width: 38px;
+    min-height: 40px;
 }
 
-body {
-    background-color: #213351;
+label, input {
+    display: block;
 }
 
-h1 {
-    text-align: center;
-    color: rgb(223, 225, 233);
-    padding-top: 40px;
-}
-
-h1, h2 {
-
-    font-weight: 400;
-    line-height: 1.3em;
-    margin-bottom:10px;
-}
-
-h2 {
-    color: rgb(255, 255, 255);
-    text-align: center;
+input {
     margin-bottom: 20px;
-    
 }
 
-nav {
-    display:inline-flex;
-    justify-content: center;
+fieldset input, fieldset label {
+    display: inline;
 }
 
-ul li {
-    display: inline-block;
-}
-
-
-p {
-    line-height: 2em;
-    font-family: Libre Baskerville;
-}
-
-section {
-    margin: auto;
+fieldset label {
     margin-bottom: 20px;
-    padding: 40px;
-    background-color: #5c6778e9;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    max-width: 800px;
 }
 
-main {
+
+
+#whiteInnerBorder {
+    background-color: white;
+    min-width: 471px;
+    min-height: 407px;
+    padding:30px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#pinkOuterBorder {
+    background-color: pink;
+    width: 600px;
+    height: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 100px auto;
+}
+
+
+.row {
     display: flex;
-    margin:auto;
-    padding: 80px;
+    flex-wrap: wrap;
 }
+
+.row h2 {
+    flex-basis: 100%; /* takes up 100 percent of space */
+}
+
+.column {
+    padding:20px;
+    margin: 20px;
+    flex: 1;
+}
+

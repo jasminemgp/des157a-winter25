@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+
+<style>
+        /* default bg color is white, and the color options that follow */
+        body {background-color: white;}
+
+        /* classes for the background colors */
+        .red { background-color: red;}
+        .orange { background-color: orange;}
+        .yellow { background-color: yellow;}
+        .green { background-color: green;}
+        .blue { background-color: blue;}
+        .purple { background-color: blueviolet;}
+
+        h1, h2, body {
+            font-family: monospace;
+        }
+    
+</style>
+
+
+
+<body>
+
+    <h1>Experiment 2</h1>
+
+    <h2>Pick a color! The background may change ...</h2>
+
+    <!-- the dropdown list of all the color options -->
+    <form>
+        <select>
+            <option>---</option> <!-- placeholder for the dropdown menu -->
+            <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="purple">purple</option>
+        </select>
+    </form>
+
+    <div></div> <!-- empty div where the color name (written based on the string length) will be displayed -->
+
+
+    <!--the following will take the users input from a dropdown list and then use the input to change the background -->
+
+    <script>
+
+        /* this div holds the strong of the colors name repeeated based on the # of letters in its color name (blue = 4, so blue,blue,blue,blue) */
+        var myDiv = document.querySelector('div');
+
+        /*  the <SELECT> drop down that captures the selected color */
+        var select = document.querySelector('select');
+
+        /* the EVENT LISTENER, this is to capture what the user chooses */
+        /* CHANGE, causes a change everytime something new is SELECTED */
+        select.addEventListener('change', function(event){
+
+            event.preventDefault(); 
+            var selectedColor = document.querySelector('select').value; /* captures the selected value */
+            console.log(selectedColor) /* logs the selected value in the console for debugging */
+
+            /* IF the selected color is not "---" then, the SELECTED color will be reflected on the bg, and it's style will change */
+            if (selectedColor != '---'){
+                document.querySelector("body").style.backgroundColor = selectedColor;
+
+            /* ELSE, the bg will remain white */
+            } else {
+                document.querySelector("body").style.backgroundColor = 'white';
+            }
+
+            /* CLEARS out the div that lists out the name, so it doesn't repeat */
+            myDiv.innerHTML = '';
+
+            /* FOR LOOP: this displays the selectedColors name, with X times repeated, based on the length of the word itself (red = repeated red 3x) */
+            for ( var i=0; i<selectedColor.length; i++) {
+                myDiv.innerHTML += `${selectedColor} `;
+            }
+
+        });
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

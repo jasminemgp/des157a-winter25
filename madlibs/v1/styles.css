@@ -31,10 +31,9 @@ h1 {
     font-family: "Single Day", serif;
     font-size: 4em;
     color: #F9FDFF;
-    margin-top: 20px;
-    margin-left: 80px;
-    text-align: left;
-
+    position: absolute;
+    left: 0;
+    top: -90px;
 }
 
 h2 {
@@ -111,8 +110,9 @@ body, p {
     height: 580px;
     border-radius: 8px;
     padding: 10px;
-    margin: 100px auto;
+    margin: 200px auto;
     outline: solid 4px #fdd0eb;
+    position: relative;
 }
 
 #outerH1 {
@@ -136,23 +136,30 @@ body, p {
     flex: 1;
 }
 
+
+
+
 button {
-    margin: auto;
     font-family: "Onest", serif;
     font-size: larger;
     color: #F0EBEE; 
     background-color: #5E66A8 ;
     border-radius: 8px;
     outline: 2px #5E66A8 ;
-    margin: 20px 16px;
     padding: 12px 18px;
-
+    position: absolute;
+    right: 0;
+    bottom: -70px;
 }
 
 /* outputMadlibs */
 
 .spacingForScroll {
    background-color: #2D314E;
+}
+
+#madlibOutput {
+    position: relative;
 }
 
 #whiteInnerBorderOutput {
@@ -172,9 +179,33 @@ button {
     height: 580px;
     border-radius: 8px;
     padding: 10px;
-    margin: 100px auto;
+    margin-top: 700px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
     outline: solid 4px #fdd0eb;
     position: relative;
+}
+
+#topLeftSparkle {
+    position: absolute;
+    top: -190px;
+    left: -290px;
+    z-index: -1;
+}
+
+#bottomLeftSparkle {
+    position: absolute;
+    bottom: -140px;
+    left: -300px;
+    z-index: -1;
+}
+
+#middleRightSparkle {
+    position:absolute;
+    top: 100px;
+    right: -250px;
+    z-index: -1;
 }
 
 p {
@@ -188,11 +219,16 @@ span {
 
 
 #envelope {
-    margin: 10px 40px;
     border-radius: 8px;
     position: absolute;
-    top: 1630px;
-    left: 830px;
-    width: 170px;
-    height: auto;
+    right: -50px;
+    bottom: -80px;
+
 }
+
+footer {
+    text-align: center;
+    color:#E5E8F6;
+    padding-bottom: 20px;
+}
+

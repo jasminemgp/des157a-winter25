@@ -5,82 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasmine's Portal Page</title>
 
-     <!--Normalize CSS Line-->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!--Normalize CSS Line-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-    <!--Google Fonts-->
+    <!-- Google Font: Orbit & Pinyon Script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Meddon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&family=Pinyon+Script&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link href="styles.css" rel="stylesheet">
 
 
-    <!--Style Sheet-->
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1 id="myNameHeader">Jasmine Gonzalez Pacheco</h1>
+        <div class="scroll-container">
+            <div class="scroll-text">
+                <h2>DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ DES157A ⟡ Winter 2025 ⟡ Interactive Media II ⟡ </h2>
+            </div>
+        </div>
+        <h1>Jasmine Gonzalez Pacheco</h1>
     </header>
 
     <main>
-        <section class="fullSection">
-        <div class="row">
-        <section class="column">
-            <h2>Research</h2>
-            <ul>
-                <li><a href="journal/images/ljSketch.jpg">Learning Journal Sketch</a></li>
-                <li><a href="journal/index.html">Learning Journal</a></li>
-                <li><a href="exp/exp1.html">Experiment 1</a></li>
-                <li><a href="exp/exp2.html">Experiment 2</a></li>
-            </ul>
-        </section>
 
-        <section class="column">
+        <article class="card">
+            <h2>Research</h2>
+            <img src="images/research-card.jpg" alt="research card" class="research">
+                <div id="visiblemenu">
+                    <ul>
+                        <li><a href="journal/images/ljSketch.jpg">Learning Journal Sketch</a></li>
+                        <li><a href="journal/index.html">Learning Journal</a></li>
+                        <li><a href="exp/exp1.html">Experiment 1</a></li>
+                        <li><a href="exp/exp2.html">Experiment 2</a></li>
+                    </ul>
+                </div>
+        </article>
+
+        <article>
             <h2>MadLibs</h2>
+            <img src="images/madlibs-card.jpg" alt="madlibs card" class="madlibs">
             <ul>
                 <li><a href="madlibs/designv1.html">Design V1</a></li>
                 <li><a href="madlibs/designv2.html">Design V2</a></li>
                 <li><a href="madlibs/v1/index.html">Code V1</a></li>
                 <li><a href="#">Final MadLibs</a></li>
             </ul>
-        </section>
-         </div>
+        </article>
+       
 
-        <div class="row">
-        <section class="column">
+        <article>
             <h2>Every Picture</h2>
+            <img src="images/everypicture-card.jpg" alt="every picture card" class="everypicture">
             <ul>
                 <li><a href="#">Experimentation</a></li>
                 <li><a href="#">Design Comp</a></li>
                 <li><a href="#">Code V1</a></li>
                 <li><a href="#">Final Every Picture</a></li>
             </ul>
-        </section>
+        </article>
 
-        <section class="column">
+        <article>
             <h2>Game On</h2>
+            <img src="images/gameon-card.jpg" alt="game on card" class="gameon">
             <ul>
                 <li><a href="#">Design V1</a></li>
                 <li><a href="#">Design V2</a></li>
                 <li><a href="#">Code V1</a></li>
                 <li><a href="#">Final Game On</a></li>
             </ul>
-        </section>
-        </div>
-    
-        <aside>
-            <p><img src="images/disk.png" alt="Rotating Disk" width="450" height="600"></p>
+        </article>
 
-        </aside>
-    </section>
     </main>
 
-    <footer>
+
+       <footer>
         <p><b>Designed by Jasmine Gonzalez Pacheco</b></p>
         <address>
-            <b>Contact: </b><a href="mailto:&#106;&#109;&#103;&#111;&#110;&#122;&#097;&#108;&#101;&#122;&#112;&#097;&#099;&#104;&#101;&#099;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#106;&#109;&#103;&#111;&#110;&#122;&#097;&#108;&#101;&#122;&#112;&#097;&#099;&#104;&#101;&#099;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
+            <b>Contact Me: </b><a href="mailto:&#106;&#109;&#103;&#111;&#110;&#122;&#097;&#108;&#101;&#122;&#112;&#097;&#099;&#104;&#101;&#099;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#106;&#109;&#103;&#111;&#110;&#122;&#097;&#108;&#101;&#122;&#112;&#097;&#099;&#104;&#101;&#099;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a>
         </address>
         <!-- the weird numbers is my email address encoded!! this avoids spam email from weird scanners -->
     </footer>
+    
 </body>
 </html>

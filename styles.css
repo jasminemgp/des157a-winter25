@@ -1,140 +1,142 @@
-/* Font Family for Header is Handjet */
 
 /* Reset Styles START */
 
-h1, h2, h3, p, ul, ol {
+h1,h2,h3,p,ul,ol {
+
     margin: 0;
+    
     padding: 0;
+    
+    }
+
+/* Removes all bullet points */
+
+ul, li {
+
+list-style-type: none;
 
 }
 
-nav ul, nav ol, li {
-    list-style-type: none;
-}
+/* Resets Images */
 
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+
+max-width: 100%;
+
+height: auto;
+
+display: block;
+
+border-radius: 4px;
 
 }
-
-/* Reset Styles END */
 
 header {
-    width: 1200px;
-    height: 250px;
-    background-image: url(images/banner.jpg);
+    min-width: 1200px;
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    background: rgb(219,224,255);
+    background: radial-gradient(circle, rgba(231,231,255) 0%, rgba(166,177,237,1) 100%);
     align-content: center;
-    margin: auto;
-}
-
-body {
-    background-color: #E7E7E7;
-}
-
-h1, h2 {
-    font-family: Meddon;
-    font-weight: 400;
-    line-height: 1.3em;
-    color: rgb(231, 231, 231);
     text-align: center;
-    margin-bottom:10px;
+    border-bottom: solid black;
+}
+
+
+h1 {
+    font-family: 'Pinyon Script';
+    font-size: 4em;
 }
 
 h2 {
-    color: black;
-    margin-bottom: 20px;
+    font-family: 'Orbit';
+    text-align: center;
 }
 
-#myNameHeader {
-    font-size: 3.75em;
-    color: rgb(223, 223, 223);
+/* scrolling animation */
+.scroll-container {
+    /* this creates a viewport for scrolling text */
+    width: 100%; /* makes the container full width */
+    overflow: hidden; /* hides text outside container boundaries */
+    margin-bottom: 30px; /* to not overlap h1 (my name) */
+}
+
+.scroll-text {
+    display: inline-block; /* allows text to maintain its width */
+    white-space: nowrap; /* prevents text wrapping */
+    animation: scrollText 60s linear infinite; /* controls the movement timing */
+}
+
+@keyframes scrollText {
+    0% {
+        -webkit-transform: translateX(100%); /* accomodating diff web formats */
+        -moz-transform: translateX(100%);
+        transform: translateX(0%); /* starts in center */
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(100%);
+        transform: translateX(-100%); /* end at right */
+    }
+}
+
+body {
+    background: rgb(219, 224, 255);
+    background: linear-gradient(0deg, rgb(231, 231, 255) 0%, rgba(166,177,237,1) 100%);
+}
+
+ul li {
+    font-family: 'Orbit';
 }
 
 main {
-    font-family: Libre Baskerville;
-    display: flex;
-    gap: 20px;
+    display:flex;
+    margin: 60px auto;
+    gap: 40px;
     padding: 20px;
-    margin: auto;
+    box-sizing: border-box;
+    border-radius: 4px;
+    min-height: calc( 100vh - 400px);
+    max-width: 1100px;
+    background-color: #E9EBFC;
     
 }
 
-.column {
-    flex-wrap: wrap;
-    min-width: 250px;
-    min-height: 300px;
-    border: 2px solid;
-    padding:20px;
-    text-align: center;
-    border-radius: 15px;
-    background-color: #D9DCE1;
-    font-size: large;
-    margin: 50px;
-    
+main article {
+    flex: 1;
 }
 
-.row {
-    flex-direction: column;
+main article div:hover #card {
+    animation: fadeIn 1s forwards;
 }
 
-.fullSection {
-    display: flex;
-    margin: auto;
-    
+.visiblemenu {
+    width: 100%;
+    height:auto;
+    display:block;
+    animation: fadeOut 1s;
+    opacity: 0;
+    background-color: #C3C8DD;
 }
 
-aside {
-    display: inline-block;
-    transition: transform 0.5s ease-in-out;
-    align-content: center;
-    margin: auto; 
-  }
-  
-  aside:hover img {
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-/* this is to adjust the spacing on the bottom of each li */
-ul li {
-    margin-bottom: 30px;
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 0;}
 }
 
-a {
-    text-decoration: none;
-    line-height: 1.3em;
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
-
-/* unvisited link */
-a:link {
-    color: #2d2d2d;
-  }
-  
-  /* visited link */
-  a:visited {
-    color:#3d333b;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: #ae1d79;
-  }
 
 footer {
-    font-family: Libre Baskerville;
+    font-family: 'Orbit';
+    align-content: center;
     text-align: center;
-    line-height: 2em;
-    color:#1f1f1f;
-    background-color: #D9DCE1;
-    padding: 20px;
-    width: 1250px;
-    margin: auto;
+    margin: 40px auto;
 }
+
+
 

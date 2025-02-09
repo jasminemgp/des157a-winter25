@@ -23,33 +23,65 @@ img {
 /* Reset Styles END */
 
 header {
-    width: 1200px;
-    height: 250px;
+    min-width: 1200px;
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    background: rgb(219,224,255);
+    background: radial-gradient(circle, rgba(231,231,255) 0%, rgba(166,177,237,1) 100%);
     align-content: center;
-    margin: auto;
+    text-align: center;
+    border-bottom: solid black;
+}
+
+
+
+h1 {
+    font-family: 'Pinyon Script';
+    font-size: 4em;
 }
 
 body {
-    background-color: #213351;
+    background: rgb(219, 224, 255);
+    background: linear-gradient(0deg, rgb(231, 231, 255) 0%, rgba(166,177,237,1) 100%);
 }
 
-h1 {
-    text-align: center;
-    color: rgb(223, 225, 233);
-    padding-top: 40px;
-}
 
-h1, h2 {
-    font-family: Meddon;
+h2, h3 {
+    font-family: 'Orbit';
+    color: black;
     font-weight: 400;
-    line-height: 1.3em;
+    line-height: 1.2em;
     margin-bottom:10px;
 }
 
-h2 {
-    color: black;
-    margin-bottom: 20px;
+/* scrolling animation */
+.scroll-container {
+    /* this creates a viewport for scrolling text */
+    width: 100%; /* makes the container full width */
+    overflow: hidden; /* hides text outside container boundaries */
+    margin-bottom: 30px; /* to not overlap h1 (my name) */
 }
+
+.scroll-text {
+    display: inline-block; /* allows text to maintain its width */
+    white-space: nowrap; /* prevents text wrapping */
+    animation: scrollText 60s linear infinite; /* controls the movement timing */
+}
+
+@keyframes scrollText {
+    0% {
+        -webkit-transform: translateX(100%); /* accomodating diff web formats */
+        -moz-transform: translateX(100%);
+        transform: translateX(0%); /* starts in center */
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(100%);
+        transform: translateX(-100%); /* end at right */
+    }
+}
+
 
 nav {
     display:inline-flex;
@@ -63,21 +95,32 @@ ul li {
 
 p {
     line-height: 2em;
-    font-family: Libre Baskerville;
+    font-family: 'Orbit';
+    color: rgb(104, 104, 104);
 }
 
 section {
     margin: auto;
     flex-direction: column;
+}
 
-div {
+article {
     padding: 40px;
-    background-color: #d9dce1e9;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
+    background-color: #E9EBFC;
+    border-radius: 4px;
     max-width: 800px;
 }
+
+.spacer {
+    padding: 40px;
+}
+
+.date {
+    color:rgb(21, 21, 21);
+}
+
+.source {
+    color:rgb(60, 60, 60);
 }
 
 main {
@@ -87,9 +130,3 @@ main {
     padding: 80px;
 }
 
-aside {
-    font-family: Libre Baskerville;
-    padding: 10px;
-    margin: auto;
-    line-height: 2em;
-}

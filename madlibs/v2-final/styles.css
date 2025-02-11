@@ -1,0 +1,234 @@
+/* Font Family for Header is Handjet */
+
+/* Provided to make smooth scroll work */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset Styles START */
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul, nav ol, li {
+    list-style-type: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+/* Reset Styles END */
+
+h1 {
+    font-family: "Single Day", serif;
+    font-size: 4em;
+    color: #F9FDFF;
+    position: absolute;
+    left: 0;
+    top: -90px;
+}
+
+h2 {
+    color: #2D314E;
+    font-size: 2em;
+    margin-left: 40px;
+}
+
+
+form {
+    min-width: 38px;
+    min-height: 40px;
+}
+
+label, input {
+    display: block;
+    padding: 4px;
+}
+
+input {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #E5E8F6;
+    min-width: 180px;
+    min-height: 28px;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #D6D9DC;
+    outline: solid rgb(138,148,222);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+fieldset input, fieldset label {
+    display: inline;
+}
+
+fieldset label {
+    margin-bottom: 20px;
+    
+}
+
+
+body{
+    font-family: "Onest", serif;
+    font-weight: 600;
+    background: rgb(138,148,222);
+    background: linear-gradient(0deg, rgba(138,148,222,1) 0%, rgba(57,63,111,1) 100%);
+}
+
+body, p {
+    color: #565868;
+}
+
+
+
+
+
+#whiteInnerBorder {
+    background-color: white;
+    width: 600px;
+    height: 480px;
+    padding:30px;
+    margin: 20px;
+    border-radius: 8px;
+    outline: dashed 4px #F2B7D3;
+    
+}
+
+#pinkOuterBorder {
+    background-color: #F7D8EA;;
+    width: 700px;
+    height: 580px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 200px auto;
+    outline: solid 4px #fdd0eb;
+    position: relative;
+}
+
+#outerH1 {
+    margin: auto;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row h2 {
+    flex-basis: 100%; /* takes up 100 percent of space */
+    margin-top: 8px;
+}
+
+.column {
+    padding:20px;
+    margin: 20px;
+    flex: 1;
+}
+
+
+
+
+button {
+    font-family: "Onest", serif;
+    font-size: larger;
+    color: #F0EBEE; 
+    background-color: #5E66A8 ;
+    border-radius: 8px;
+    outline: 2px #5E66A8 ;
+    padding: 12px 18px;
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+}
+
+/* outputMadlibs */
+
+.spacingForScroll {
+   background-color: #2D314E;
+}
+
+#madlibOutput {
+    position: relative;
+}
+
+#whiteInnerBorderOutput {
+    background-color: white;
+    width: 600px;
+    height: 480px;
+    padding:30px;
+    margin: 20px;
+    border-radius: 8px;
+    outline: dashed 4px #F2B7D3;
+    
+}
+
+#pinkOuterBorderOutput {
+    background-color: #F7D8EA;;
+    width: 700px;
+    height: 580px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 700px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: solid 4px #fdd0eb;
+    position: relative;
+}
+
+#topLeftSparkle {
+    position: absolute;
+    top: -190px;
+    left: -290px;
+    z-index: -1;
+}
+
+#bottomLeftSparkle {
+    position: absolute;
+    bottom: -140px;
+    left: -300px;
+    z-index: -1;
+}
+
+#middleRightSparkle {
+    position:absolute;
+    top: 100px;
+    right: -250px;
+    z-index: -1;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+span {
+    color: #5961A7;
+}
+
+
+#envelope {
+    border-radius: 8px;
+    position: absolute;
+    right: -50px;
+    bottom: -80px;
+
+}
+
+footer {
+    text-align: center;
+    color:#E5E8F6;
+    padding-bottom: 20px;
+}
+

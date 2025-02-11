@@ -2,9 +2,6 @@
     'use strict'
     console.log('using JS');
 
-
-    const madlib = document.querySelector('#madlib');
-
     const clickButton = document.querySelector('button');
 
     clickButton.addEventListener('click', function(event){ 
@@ -56,7 +53,7 @@
        }
 
        else if (number == ''){
-        myText = "Please provide a number ... any number";
+        myText = "Please provide an adjective";
         document.querySelector('#number').focus();
        }
 
@@ -67,7 +64,7 @@
 
        myText = `<p>Dear <span>${fName}</span> <br/> <br/>
 
-                                It’s been a long time since we’ve last spoken to each other. As I was <span>${verb}</span> the other day I thought of us and our memories at <span>${nounPlace}</span>. I remember we had several <span>${pluralNoun}</span> chasing us after we had stolen our neighbors pomegranates. What a bittersweet moment, I’ve never truly felt so alive. Or remember the time when we were in high school and we were serving <span>${adj1}</span>, <span>${adj2}</span> diva in our school spirit attire!? Anyways, I know we fell off because I wronged you <span>${adj2}</span> times but could you give us one more chance? I miss you!!!<br/> <br/>
+                                It’s been a long time since we’ve last spoken to each other. As I was <span>${verb}</span> the other day I thought of us and our memories at <span>${nounPlace}</span>. I remember we had several <span>${pluralNoun}</span> chasing us after we had stolen our neighbors pomegranates. What a bittersweet moment, I’ve never truly felt so alive. Or remember the time when we were in high school and we were serving <span>${adj1}</span>, <span>${adj2}</span> diva in our school spirit attire!? Anyways, I know we fell off because I wronged you <span>${number}</span> times but could you give us one more chance? I miss you!!!<br/> <br/>
                                 Sincerely, <br /> <br />
                                 <span>${yName}</span>
                                 

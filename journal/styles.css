@@ -17,6 +17,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    padding: auto 10px;
 
 }
 
@@ -109,6 +110,7 @@ article {
     background-color: #E9EBFC;
     border-radius: 4px;
     max-width: 800px;
+    align-content: center;
 }
 
 .spacer {

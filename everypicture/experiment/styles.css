@@ -1,0 +1,97 @@
+/* Font Family is --- */
+
+/* Reset Styles START */
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul, nav ol, li {
+    list-style-type: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: auto 10px;
+
+}
+
+/* Reset Styles END */
+
+header {
+    height: 100px;
+    position: sticky;
+    top:0;
+    width: 100%;
+    background-color: rgba(55, 119, 178, 0.3);
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4 em;
+    text-align: center;
+}
+
+h2 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+section p {
+    text-align: left;
+    margin: auto 70px;
+    padding: 20px;
+    line-height: 2em;
+    background-color: rgba(162, 184, 222, 0.201);
+    border-radius: 27px;
+    z-index: 1;
+}
+
+.section3 {
+    display: flex;
+
+}
+
+
+
+section {
+    display: flex;
+    box-sizing: border-box;
+    border: 5px solid #e019d329; 
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px;
+    height: calc(100svh - 200px);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    transition: all 1s;
+}
+
+
+
+
+body {
+    background-color: #DEEAF3;
+    padding-bottom: calc(100svh - 100px);
+}
+
+
+
+footer {
+    font-family:"pf-pixelscript", sans-serif;
+    text-align: center;
+    padding: 50px;
+}

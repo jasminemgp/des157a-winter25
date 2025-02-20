@@ -1,0 +1,48 @@
+/* Font Family is --- */
+
+/* Reset Styles START */
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul, nav ol, li {
+    list-style-type: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: auto 10px;
+
+}
+/* reset styles end */
+
+h1 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4 em;
+    text-align: center;
+    padding: 40px;
+}
+
+section {
+    background-image: url(images/darkroom.jpg);
+    min-width: 1440px;
+    max-width: 1024px;
+}
+
+
+
+body {
+    background-image: url(images/thefinalroom.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}

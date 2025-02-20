@@ -59,9 +59,12 @@ section p {
     z-index: 1;
 }
 
-.section3 {
-    display: flex;
 
+
+#firstpaletterow {
+    display: flex;
+    flex-direction: row;
+    max-width: 623px;
 }
 
 

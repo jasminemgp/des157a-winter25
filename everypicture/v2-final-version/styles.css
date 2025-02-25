@@ -1,0 +1,231 @@
+/* Font Family is --- */
+
+/* Reset Styles START */
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul, nav ol, li {
+    list-style-type: none;
+}
+
+
+/* reset styles end */
+
+header {
+    height: 100px;
+    position: sticky;
+    top:0;
+    width: 100%;
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 40px;
+    color: #e4e0ec;
+}
+
+h2 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 20px;
+    color: #14111A;
+}
+
+section{
+    width: 1200px;
+    height: 800px;
+    border-radius: 7px;
+    border-style:  double;
+    margin: auto;
+    color: #D3CDDE;
+    
+}
+
+img .background{
+    width: 1200px;
+    height: 800px;
+    border-radius: 7px;
+}
+
+img {
+    border-radius: 7px;
+}
+
+body {
+    background-color: #525056;
+}
+
+p {
+    font-family: "Inter";
+    color: #39373d;
+    font-size: 0.8em;
+}
+
+button {
+    font-family: "Inter";
+    z-index: 1;
+    border-radius: 7px;
+    border-style: none;
+    color: #D3CDDE;
+    padding: 7px;
+    background-color: #3D364C;
+
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+
+
+ #overlayAboutMe {
+    box-sizing: border-box;
+    background-color:#E9E4F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5E5571;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+}
+
+#overlayPalettes {
+    box-sizing: border-box;
+    background-color:#E9E4F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5E5571;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+}
+
+#overlayPalettes .slide {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #E9E4F1;
+    padding: 20px;
+    text-align: center;
+}
+
+#overlayLooks {
+    box-sizing: border-box;
+    background-color:#E9E4F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5E5571;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+}
+
+#overlayLooks .slide {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: #E9E4F1;
+    padding: 20px;
+    text-align: center;
+}
+
+#overlayAlbums {
+    box-sizing: border-box;
+    background-color:#E9E4F1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5E5571;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#overlayAlbums .slide {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: #E9E4F1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* sets all slides to transparent but top one is opaque (inline rule overrides opacity 0 */
+.slide {
+    opacity: 0;
+}
+
+
+
+
+
+div article{
+    align-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

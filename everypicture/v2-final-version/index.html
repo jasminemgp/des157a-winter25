@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Room</title>
+
+     <!--Normalize CSS Line-->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Script -->
+    <script src="script.js" defer></script>
+
+    <!-- PF Pixelscript Adobe -->
+    <link rel="stylesheet" href="https://use.typekit.net/dns6kwt.css">
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1>Jasmine's Vanity Room</h1>
+    </header>
+
+    <section>
+        <img src="images/room.jpg" id="background" alt="main background image">
+    </section>
+
+    <!-- about me -->
+    <div id="overlayAboutMe" class="hidden">
+        <article>
+            <h2>About Me</h2>
+            <img src="images/aboutme.jpg" alt="aboutme">
+            <h3>I'm Jasmine & I love makeup!</h3>
+            <p>
+                I started doing my makeup in high school, but really experimented with it during COVID. It helps me feel ready for the day & serves as a creative outlet. I love elevating my looks with rhinestones, graphic liner, & glitter shadows.
+            </p>
+        </article>
+    </div>
+
+        <article id="overlayAlbums">
+            <h2>Top Songs on Repeat</h2>
+
+            <div class="slide" style="opacity:1; z-index:1;">
+                <img src="images/music/m1magdalena.jpg" alt="magdalenabay">
+                <h3>Watching TV - Magdalena Bay</h3>
+                    <p>
+                    *insert audio player*
+                    </p>
+            </div>
+
+            <div class="slide">
+                <img src="images/music/m2twigs.jpg" alt="fkatwigs">
+                <h3>Eusexua - FKA Twigs</h3>
+                    <p>
+                    *insert audio player*
+                    </p>
+            </div>
+
+            <div class="slide">
+                <img src="images/music/m3lana.jpg" alt="lanadelrey">
+                <h3>White Mustang - LDR</h3>
+                    <p>
+                    *insert audio player*
+                    </p>
+            </div>
+
+            <!-- buttons -->
+            <div>
+                <button id="previous1">previous</button>
+                <button id="next1">next</button>
+            </div>
+
+        </article>
+
+        <!-- Palettes -->
+        <article id="overlayPalettes" class="hidden">
+
+            <div class="slide" style="opacity:1; z-index:1;">
+                <h2>Makeup by Mario</h2>
+                <img src="images/palettes/marioF.jpg" alt="closedpalette">
+                <img src="images/palettes/marioB.jpg" alt="openpalette">
+                <h3>The Neutrals Matte Palette</h3>
+                    <p>
+                        My everyday makeup palette—highly recommend! It's on the pricier side, but the formula is amazing and blends seamlessly.
+                    </p>
+            </div>
+
+            <div class="slide"> 
+                <h2>Isamaya</h2>
+                <img src="images/palettes/glitterF.jpg" alt="closedpalette">
+                <img src="images/palettes/glitterB.jpg" alt="openpalette">
+                <h3>Industrial 2.0 Palette</h3>
+                    <p>
+                        My most expensive palette but it is HIGHLY worth it for glitter enthusiasts. It’s hard to find glitter that’s smooth and gentle on the eyes!
+                    </p>
+            </div>
+
+            <div class="slide">
+                <h2>Flower Knows</h2>
+                <img src="images/palettes/glitterF.jpg" alt="closedpalette">
+                <img src="images/palettes/glitterB.jpg" alt="openpalette">
+                <h3>03 Pink Swan Palette</h3>
+                    <p>
+                        This palette is so aesthetically pleasing, and honestly, I bought it because I love swans. The shadow formula is amazing as well!
+                    </p>
+            </div>
+            
+
+           <!-- buttons -->
+           <div>
+                <button id="previous2">previous</button>
+                <button id="next2">next</button>
+            </div>
+
+ 
+        </article>
+    
+
+    <section id="overlayLooks" class="hidden">
+        <article>
+            <h2>Creative Expression</h2>
+            <img src="images/eyelooks/graphiclook1.jpg" alt="linerlook1">
+            <img src="images/eyelooks/graphiclook2.jpg" alt="linerlook2">
+            <img src="images/eyelooks/graphiclook3.jpg" alt="linerlook3">
+            <h3>Graphic Liner</h3>
+                <p>
+                    I love graphic eyeliner and symmetry in makeup, often drawing inspiration from Rorschach inkblots or patterns on insects. 
+                </p>
+        </article>
+
+        <article>
+            <h2>Creative Expression</h2>
+            <img src="images/eyelooks/glitterlook1.jpg" alt="glitterlook1">
+            <img src="images/eyelooks/glitterlook2.jpg" alt="glitterlook2">
+            <img src="images/eyelooks/glitterlook3.jpg" alt="glitterlook3">
+            <h3>Glitter & Rhinestones</h3>
+                <p>
+                    A little sparkle can elevate any look. When my makeup feels incomplete, I always add glitter or rhinestones or both!
+                </p>
+        </article>
+    </div>
+    
+</body>
+
+
+</html>

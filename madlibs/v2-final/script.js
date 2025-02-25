@@ -9,6 +9,10 @@
         event.preventDefault();
        //alert('form submitted');
 
+       document.querySelector('#outputText').scrollIntoView({ behavior: 'smooth' })
+
+
+
        /* getting data/value from the form field and assign it to a variable */
 
        const fName = document.querySelector('#fName').value;

@@ -8,6 +8,9 @@
     console.log(paletteHotspot);
 
 
+
+
+
     /* gets slides inside of the id */
     const albumsSlides = document.querySelectorAll('#overlayAlbums .slide');
     console.log(albumsSlides);

@@ -17,10 +17,8 @@ nav ul, nav ol, li {
 
 header {
     height: 100px;
-    position: sticky;
     top:0;
     width: 100%;
-
     display: grid;
     place-content: center;
     text-align: center;
@@ -34,7 +32,7 @@ h1 {
     font-size: 3.5em;
     text-align: center;
     padding: 40px;
-    color: #e4e0ec;
+    color: BLACK;
 }
 
 h2 {
@@ -78,7 +76,7 @@ img {
 }
 
 body {
-    background-color: #525056;
+    background-color: #3d3a41;
 }
 
 p {
@@ -97,7 +95,6 @@ button {
     background-color: #3D364C;
 
 }
-
 
 
 
@@ -141,16 +138,21 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
 }
 
 #overlayPalettes .slide {
     position: absolute;
-    top: 20px;
-    left: 10px;
+    top: 50px;
+    left: 20px;
     background-color: #E9E4F1;
     padding: 20px;
     text-align: center;
 }
+
 
 #overlayLooks {
     box-sizing: border-box;
@@ -166,6 +168,10 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
 }
 
 #overlayLooks .slide {
@@ -194,6 +200,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
 
 }
 
@@ -210,9 +217,6 @@ button {
 .slide {
     opacity: 0;
 }
-
-
-
 
 
 div article{

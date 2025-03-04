@@ -8,8 +8,10 @@ h1, h2, h3, p, ul, ol {
 
 }
 
-nav ul, nav ol, li {
+nav ul, nav ul, li {
     list-style-type: none;
+    color: rgb(104, 104, 104);
+    font-family: 'Orbit';
 }
 
 
@@ -89,9 +91,7 @@ nav {
     justify-content: center;
 }
 
-ul li {
-    display: inline-block;
-}
+
 
 
 p {

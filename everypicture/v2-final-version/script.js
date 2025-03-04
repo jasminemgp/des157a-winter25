@@ -3,6 +3,11 @@
     console.log('using JS');
 
 
+    //image map
+    const paletteHotspot = document.querySelector('#overlayLooks');
+    console.log(paletteHotspot);
+
+
     /* gets slides inside of the id */
     const albumsSlides = document.querySelectorAll('#overlayAlbums .slide');
     console.log(albumsSlides);
@@ -54,6 +59,119 @@
         albumsSlides[currentAlbum].style.opacity=1;
 
     }
+
+    //Slide for Palettes!
+        /* gets slides inside of the id */
+        const paletteSlides = document.querySelectorAll('#overlayPalettes .slide');
+        console.log(paletteSlides);
+    
+        /* start at palette 1 (mario) */
+        let currentPalette = 0;
+    
+        /* event listeners for buttons */
+        document.querySelector('#next2').addEventListener('click', nextPalette);
+        document.querySelector('#previous2').addEventListener('click', prevPalette);
+    
+        /* next button */
+        function nextPalette(){
+            /* changing to the next one */
+            currentPalette++;
+    
+            /* takes current album displayed and sets them to 0, to disappear */
+            paletteSlides[currentPalette-1].style.zIndex=0;
+            paletteSlides[currentPalette-1].style.opacity=0;
+    
+            if (currentPalette > paletteSlides.length - 1){
+                console.log(currentPalette);
+                currentPalette = 0;
+                
+            }
+    
+            //console.log(currentAlbum);
+            paletteSlides[currentPalette].style.zIndex=1;
+            paletteSlides[currentPalette].style.opacity=1;
+    
+        }
+    
+        function prevPalette(){
+            /* changing to the next one */
+            currentPalette--;
+    
+            /* takes current album displayed and sets them to 0, to disappear */
+            paletteSlides[currentPalette+1].style.zIndex=0;
+            paletteSlides[currentPalette+1].style.opacity=0;
+    
+            if (currentPalette < 0){
+                console.log(currentPalette);
+                currentPalette = paletteSlides.length - 1;
+                
+            }
+    
+            //console.log(currentAlbum);
+            paletteSlides[currentPalette].style.zIndex=1;
+            paletteSlides[currentPalette].style.opacity=1;
+    
+        }
+
+
+        //Slide for Looks
+        /* gets slides inside of the id */
+        const lookSlides = document.querySelectorAll('#overlayLooks .slide');
+        console.log(lookSlides);
+    
+        /* start at palette 1 (mario) */
+        let currentLook = 0;
+    
+        /* event listeners for buttons */
+        document.querySelector('#next3').addEventListener('click', nextLook);
+        document.querySelector('#previous3').addEventListener('click', prevLook);
+    
+        /* next button */
+        function nextLook(){
+            /* changing to the next one */
+            currentLook++;
+    
+            /* takes current album displayed and sets them to 0, to disappear */
+            lookSlides[currentLook-1].style.zIndex=0;
+            lookSlides[currentLook-1].style.opacity=0;
+    
+            if (currentLook > lookSlides.length - 1){
+                console.log(currentLook);
+                currentLook = 0;
+                
+            }
+    
+            //console.log(currentAlbum);
+            lookSlides[currentLook].style.zIndex=1;
+            lookSlides[currentLook].style.opacity=1;
+    
+        }
+    
+        function prevLook(){
+            /* changing to the next one */
+            currentLook--;
+    
+            /* takes current album displayed and sets them to 0, to disappear */
+            lookSlides[currentLook+1].style.zIndex=0;
+            lookSlides[currentLook+1].style.opacity=0;
+    
+            if (currentLook < 0){
+                console.log(currentLook);
+                currentLook = lookSlides.length - 1;
+                
+            }
+    
+            //console.log(currentAlbum);
+            lookSlides[currentLook].style.zIndex=1;
+            lookSlides[currentLook].style.opacity=1;
+    
+        }
+
+
+
+
+
+
 
 
 })();

@@ -1,0 +1,343 @@
+/* Font Family is --- */
+
+/* Reset Styles START */
+
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul, nav ol, li {
+    list-style-type: none;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 800px;
+    height: auto;
+    display: block;
+    padding:10px;
+
+}
+
+/* end of reset styles */
+
+#startheader {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 7em;
+    text-align: center;
+    padding: 40px;
+    margin-top: 200px;
+}
+
+#gameheader {
+    font-family: "pf-pixelscript", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+body {
+    background: rgb(255,230,243);
+    background: radial-gradient(circle, rgba(255,230,243,1) 0%, rgba(244,184,220,1) 100%);
+}
+
+section {
+    width: 1125px;
+    height: 800px;
+    border-radius: 7px;
+    margin: auto;
+    border: 5px solid #6e0d6829; 
+    display: flex;
+    align-content: center;
+    position: relative;
+}
+
+
+footer {
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+#background {
+    z-index: -1;
+}
+
+#attack {
+    z-index: 1;
+    position: absolute;
+    top:660px;
+    left:470px;
+    font-family: "Outfit", serif;
+    font-size: xx-large;
+    color: #3C3539; 
+    background-color: #F9EBF3 ;
+    border-radius: 8px;
+    outline: 7px #ECBAD6 ;
+    padding: 20px 10px;
+    margin: 30px;
+}
+
+#start, #reset {
+    z-index: 1;
+    position: absolute;
+    top:160px;
+    left:60px;
+    font-family: "Outfit", serif;
+    font-size: xx-large;
+    color: #3C3539; 
+    background-color: #F9EBF3 ;
+    border-radius: 8px;
+    outline: 7px #ECBAD6 ;
+    padding: 20px 10px;
+    margin: 30px;
+
+}
+
+#action {
+    z-index: 1;
+    position: absolute;
+    background-color: #E4AECC;
+    border-radius: 8px;
+    outline: 7px #D39BBA ;
+    font-size: 0.7em;
+    width: 400px;
+    height: 131px;
+    align-content: center;
+    top: 500px;
+    left: 370px;
+
+}
+
+#Sylvia {
+    z-index: 1;
+    position: absolute;
+    top: 365px;
+    left:130px;
+}
+
+#player1name {
+    z-index: 1;
+    position: absolute;
+    top: 690px;
+    left: 20px;
+    font-family: "Outfit", sans;
+}
+
+#Pearl {
+    z-index: 1;
+    position: absolute;
+    top: 365px;
+    right:130px;
+}
+
+#player2name {
+    z-index: 1;
+    position: absolute;
+    top: 690px;
+    right: 20px;
+    font-family: "Outfit", sans;
+}
+
+
+
+#healthbar0 {
+    z-index: 1;
+    width: 75%;
+    max-width: 300px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 16px;
+    position: absolute;
+    overflow: hidden; 
+    top: 720px;
+    left: 20px;
+}
+
+/* the percentage */
+#divahealth0 {
+    z-index: 1;
+    position: absolute;
+    top: 720px;
+    left: 330px;
+}
+
+#healthbar1 {
+    z-index: 1;
+    width: 75%;
+    max-width: 300px;
+    height: 30px;
+    border: 2px solid #333;
+    border-radius: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 720px;
+    right: 20px;
+
+}
+
+/* the percentage */
+#divahealth1 {
+    z-index: 1;
+    position: absolute;
+    top: 720px;
+    right: 330px;
+}
+
+
+#healthbar1 div, #healthbar0 div {
+    z-index: 1;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(0deg, rgba(226,170,199,1) 0%, rgba(226,125,183,1) 51%, rgba(241,116,191,1) 100%);
+    border-radius: 16px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* START SCREEN BELOW */
+
+#info {
+    font-family: "Outfit", serif;
+    font-size: larger;
+    color: #3C3539; 
+    background-color: #F9EBF3 ;
+    border-radius: 8px;
+    outline: 7px #ECBAD6 ;
+    padding: 12px 18px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+#music {
+    font-family: "Outfit", serif;
+    font-size: larger;
+    color: #3C3539; 
+    background-color: #F9EBF3 ;
+    border-radius: 8px;
+    outline: 7px #ECBAD6 ;
+    padding: 12px 18px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+
+
+
+
+/* battle animations */
+
+/* Note the use of names for these classes. They all have the same names 
+with a number at the end, so that if the user rolls a 0, 1, 2, etc, that
+number can just be tacked on to the class name in JS. */
+.attack0 {
+    animation: veryweak 1s ease-in-out 2;
+}
+
+.attack1 {
+    animation: weak 1s ease-in-out 2;
+}
+
+.attack2 {
+    animation: medium 1s ease-in-out 2;
+}
+
+.attack3 {
+    animation: strong 1s ease-in-out 2;
+}
+
+.attack4 {
+    animation: massive 1s ease-in-out 2;
+}
+
+.defend2 {
+    animation: gobackward 2s ease-in-out 1;
+}
+
+.defend0 {
+    animation: shake 1s ease-in-out 2;
+}
+
+.defend1{
+    animation: spin 1s ease-in-out 2;
+}
+
+@keyframes veryweak {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes weak {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.3);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes medium {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes strong {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.7);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes massive {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);} 
+    100% {transform: scale(1);}
+}
+
+@keyframes gobackward {
+    0% {transform: scale(1);}
+    20% {transform: scale(0.6) rotate(-15deg);}
+    40% {transform: scale(0.6) rotate(15deg);}
+    60% {transform: scale(0.6) rotate(0deg);}
+    80% {transform: scale(0.6);}
+    100% {transform: scale(1);}
+}
+
+@keyframes shake {
+    0% {transform: translateX(0px);}
+    20% {transform: translateX(-10px);}
+    40% {transform: translateX(10px);}
+    60% {transform: translateX(-5px);}
+    80% {transform: translateX(5px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);} 
+}

@@ -31,8 +31,9 @@ h1 {
     font-style: normal;
     font-size: 3.5em;
     text-align: center;
-    padding: 40px;
-    color: BLACK;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #D3CDDE;
 }
 
 h2 {
@@ -76,13 +77,13 @@ img {
 }
 
 body {
-    background-color: #3d3a41;
+    background-color: #14111A;
 }
 
 p {
     font-family: "Inter";
     color: #39373d;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 button {
@@ -115,14 +116,18 @@ button {
     border-width: 2px;
     border-color: #5E5571;
     padding: 20px;
-    width: 350px;
-    height: 500px;
+    width: 360px;
+    height: 560px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 #overlayPalettes {
     box-sizing: border-box;
@@ -132,22 +137,21 @@ button {
     border-color: #5E5571;
     padding: 20px;
     width: 350px;
-    height: 500px;
+    height: 540px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
-    display: none;
 }
 
 #overlayPalettes .slide {
     position: absolute;
     top: 50px;
-    left: 20px;
+    left: 10px;
     background-color: #E9E4F1;
     padding: 20px;
     text-align: center;
@@ -162,16 +166,16 @@ button {
     border-color: #5E5571;
     padding: 20px;
     width: 350px;
-    height: 500px;
+    height: 535px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
-    display: none;
+
 }
 
 #overlayLooks .slide {
@@ -190,24 +194,23 @@ button {
     border-width: 2px;
     border-color: #5E5571;
     padding: 20px;
-    width: 350px;
-    height: 500px;
+    width: 370px;
+    height: 550px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
-    display: none;
 
 }
 
 #overlayAlbums .slide {
     position: absolute;
     top: 50px;
-    left: 20px;
+    left: 10px;
     background-color: #E9E4F1;
     padding: 20px;
     text-align: center;
@@ -219,11 +222,39 @@ button {
 }
 
 
-div article{
+article div{
     align-content: center;
     text-align: center;
 }
 
+article div p{
+    padding-bottom: 10px;
+}
+
+/* typewriter effect from Geoff Graham on CSS Tricks */
+
+.typewriter h1 {
+    overflow: hidden; /* ensures content is not revealed until the animation */
+    border-right: .15em dashed #3D364C;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(50, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* the typing effect from start to finish */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* typewritor cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #3D364C; }
+}
 
 
 

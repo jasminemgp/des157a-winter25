@@ -8,7 +8,7 @@ h1, h2, h3, p, ul, ol {
 
 }
 
-nav ul, nav ol, li {
+nav ul, nav {
     list-style-type: none;
 }
 
@@ -24,15 +24,6 @@ img {
 
 /* end of reset styles */
 
-#startheader {
-    font-family: "pf-pixelscript", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 7em;
-    text-align: center;
-    padding: 40px;
-    margin-top: 200px;
-}
 
 #gameheader {
     font-family: "pf-pixelscript", sans-serif;
@@ -219,6 +210,47 @@ footer {
     opacity: 1;
 }
 
+h2 {
+    font-family: "Outfit", sans-serif;
+}
+
+
+#infoOverlay {
+    box-sizing: border-box;
+    background-color:#f2e1f0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5E5571;
+    padding: 30px;
+    width: 630px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overlay-hidden {
+    display: none;
+}
+
+.overlay-visible {
+    display: flex;
+}
+
+ul li a {
+    list-style-type: circle;
+}
+
+.infoText {
+    font-family: "Outfit";
+    font-size: 1.3em;
+    text-align: left;
+    line-height: 1.3em;
+    padding: 10px;
+}
 
 /* START SCREEN BELOW */
 

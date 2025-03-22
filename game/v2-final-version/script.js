@@ -13,6 +13,9 @@
     const musicBtn = document.querySelector('#music');
     const ambiance = new Audio('audio/bgmusic.mp3');
 
+    /* attack catfight audio */
+    const angryMeow = new Audio('audio/angryMeow.mp3');
+
     /* These variables are assigned later and used to keep track of
     the state of the game. Attacker and defender will end up just being
     the name of the monster for the person who is attacking and the person who
@@ -26,16 +29,41 @@
     ambiance.play();
     });
 
+
+
+
+
+    /* info overlay */
+    const infoBtn = document.querySelector("#info");
+    const infoOverlay = document.querySelector("#infoOverlay");
+    const closeBtn = document.querySelector("#closeBtn");
+
+    infoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        infoOverlay.classList.remove('overlay-hidden');
+        infoOverlay.classList.add('overlay-visible');
+    });
+
+    closeBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        infoOverlay.classList.remove('overlay-visible');
+        infoOverlay.classList.add('overlay-hidden');
+        console.log('close button clicked!');
+
+    })
+
+
+
     const gameData = {
 		players: ['Sylvia', 'Pearl'],
 		health: [100, 100],
-		attack: [5, 15, 25, 30, 40],
+		attack: [15, 30, 45, 50, 65],
         attackMessage: [
-            'a very weak scratch! -5 HP!',
-            'a weak hit! -15 HP',
-            'a strong attack, you have broken a nail! -25 HP',
-            'a big attack she is shaking in her boots! -30 HP',
-            'massive attack! finish her! -40 HP'
+            'a very weak scratch! -15 HP!',
+            'a weak hit! -30 HP',
+            'a strong attack, you have broken a nail! -45 HP',
+            'a big attack she is shaking in her boots! -50 HP',
+            'massive attack! finish her! -65 HP'
         ],
 		defendMessage: [
             'no defense, hit!', 
@@ -70,11 +98,14 @@
             attacker = gameData.players[1];
             defender = gameData.players[0];
             defenderIndex = 0;
+            angryMeow.play();
+            
         }
         else {
             attacker = gameData.players[0];
             defender = gameData.players[1];
             defenderIndex = 1;
+            angryMeow.play();
         }
 
         //these generate the random attack of 0-4 and the random defense of 0-2

@@ -24,7 +24,7 @@ img {
 
 max-width: 100%;
 
-height: auto;
+height: 100%;
 
 display: block;
 
@@ -53,6 +53,8 @@ h1 {
 h2 {
     font-family: 'Orbit';
     text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.3em;
 }
 
 /* scrolling animation */
@@ -89,47 +91,86 @@ body {
 
 ul li {
     font-family: 'Orbit';
+    line-height: 1.5em;
 }
 
-main {
+/* main {
     display:flex;
-    margin: 60px auto;
-    gap: 40px;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 4px;
     min-height: calc( 100vh - 400px);
-    max-width: 1100px;
+    max-width: 1300px;
     background-color: #E9EBFC;
-    
+    justify-content: center;
+} */
+
+main {
+    box-sizing: border-box;
+    min-height: calc( 100vh - 400px);
+    padding: 30px;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #4c4e602d;
+    align-content: center;
 }
 
 main article {
     flex: 1;
+    
 }
 
-main article div:hover #card {
-    animation: fadeIn 1s forwards;
+.card {
+    aspect-ratio: 2 / 3;
+    position: relative;
+    perspective: 1000px; 
+    margin-top: 23px;
+ }
+
+ .card:hover .front {
+	transform: rotateY(0deg);
 }
 
-.visiblemenu {
+.card:hover .back {
+    transform: rotateY(180deg);
+}
+
+.back, .front {
+	backface-visibility: hidden;
+   border-radius: 10px;
+	transition: 1s;
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: auto;
+}
+
+.back { 
+    border: 3px solid #B1BBEA;
+    transform: rotateY(0deg); 
+    aspect-ratio: 2 / 3;
+    width: 255px;
+    height: 375px;
+ }
+
+ .front {
+    background-color: #D6DBF9;
+	transform: rotateY(-180deg);
+    border: 3px solid #B1BBEA;
     width: 100%;
-    height:auto;
-    display:block;
-    animation: fadeOut 1s;
-    opacity: 0;
-    background-color: #C3C8DD;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;	
+    height: 355px;
+    width: 235px;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 0;}
-}
 
-@keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
 
 footer {
     font-family: 'Orbit';
